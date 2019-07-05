@@ -1,0 +1,60 @@
+#contactContainer
+{
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0 10px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+#profileImg
+{
+  position: relative;
+  margin: auto;
+  width: 28%;
+  overflow: hidden;
+  border: 5px solid #045F85;
+  border-radius: 150px;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 40px;
+  min-width: 120px;
+}
+#profileImg > img
+{
+  width: 100%;
+}
+.horizontalLine
+{
+  width: 45%;
+  background-color: #FF7791;
+  color: #FF7791;
+  padding: 1px 0;
+  min-width: 200px;
+}
+#contactData
+{
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+}
+#contactData > p
+{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:596px)
+{
+
+}

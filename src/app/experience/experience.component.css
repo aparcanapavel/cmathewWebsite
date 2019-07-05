@@ -1,0 +1,200 @@
+.horizontalLine
+{
+  width: 70%;
+  background-color: #FF7791;
+  color: #FF7791;
+  padding: 1px 0;
+}
+#experienceContainer
+{
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+#portfolio
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#port
+{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#port > h4
+{
+  color: #045F85;
+  text-decoration: underline;
+}
+#projectList
+{
+  padding-top: 5px;
+  padding-left: 50px;
+}
+#projectList > a > h5
+{
+  color: #FF7791
+}
+#projectList > p
+{
+  padding-right: 30%;
+}
+
+#workXp
+{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#jobs
+{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#jobs > h4
+{
+  color: #045F85;
+}
+#jobs > h5
+{
+  color: gray;
+}
+#jobs > div
+{
+  overflow: hidden;
+  position: relative;
+}
+#dateLocation
+{
+  float: right;
+  text-align: right;
+}
+#projectList
+{
+  padding-top: 5px;
+}
+#projectList > a > h5
+{
+  color: #FF7791
+}
+#vLine,
+#jobDescription
+{
+  display: inline-block;
+  position: relative;
+}
+#vLine
+{
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  background-color: #045F85;
+}
+#jobDescription
+{
+  width: 90%;
+}
+#jobDescription > li
+{
+  padding-right: 30%;
+  padding-bottom: 10px;
+  list-style: none;
+}
+#jobDescription > li:last-child
+{
+  padding-bottom: 0px;
+}
+
+#education
+{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#education > p
+{
+  float: right;
+  padding-top: 25px;
+}
+#school,
+#studies
+{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  padding-top: 10px;
+}
+#school
+{
+  padding-left: 130px;
+}
+
+
+
+
+
+
+
+/* Mobile Switch! */
+@media all and (max-width:596px)
+{
+  #workXp
+  {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #jobs
+  {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  #jobs > h4
+  {
+    color: #045F85;
+    margin-top: -90px;
+  }
+  #jobs > h5
+  {
+    color: gray;
+    padding-bottom: 60px;
+  }
+  #jobs > div
+  {
+    overflow: hidden;
+    position: relative;
+  }
+  #dateLocation
+  {
+    float: none;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    margin-top: 30px;
+    top: 16px;
+  }
+
+  #education
+  {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #education > p
+  {
+    position: absolute;
+    right: 5px;
+    margin-top: 30px;
+  }
+  #school,
+  #studies
+  {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    padding-top: 20px;
+    text-align:center;
+  }
+  #school
+  {
+    padding-left: 0px;
+  }
+}

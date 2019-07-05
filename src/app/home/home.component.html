@@ -1,0 +1,26 @@
+
+<div id="aboutMe">
+  <h3>About Me</h3>
+  <p>{{ aboutMe.aboutParagraph }}</p>
+</div>
+<hr class="horizontalLine">
+<div id="blog">
+  <a routerLink="/blog" (click)="setTitleTo($event)"><h3>Blog</h3></a>
+
+  <div id="blogPreview" *ngFor="let blog of blogs | reverse | slice:0:3 ">
+    <div id="blogHeader">
+      <a routerLink="/blog/{{blog.blogId}}"><h4>{{ blog.blogTitle }}</h4></a>
+      <h6>{{ blog.blogDate }}</h6>
+    </div>
+
+    <div id="blogImgNp">
+      <div id="blogImg">
+        <a routerLink="/blog/{{blog.blogId}}"><img src={{blog.blogImage}} alt=""></a>
+      </div>
+
+      <p style="white-space: pre-wrap;">{{ blog.blogSummary }}</p>
+    </div>
+    <hr id="blogDivider">
+  </div>
+
+</div>

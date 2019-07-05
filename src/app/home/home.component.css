@@ -1,0 +1,134 @@
+#aboutMe
+{
+  position: relative;
+  padding: 0 10px;
+}
+#aboutMe > h3
+{
+  padding-top: 20px;
+}
+#aboutMe > p
+{
+  padding: 10px 0px;
+  padding-left: 130px;
+  padding-right: 50px;
+  font-size: 15px;
+}
+.horizontalLine
+{
+  width: 70%;
+  background-color: #FF7791;
+  color: #FF7791;
+  padding: 1px 0;
+}
+#blog
+{
+  position: relative;
+  padding: 0 10px;
+  margin-top: 35px;
+}
+#blog > a
+{
+  color: black;
+}
+#blog > a
+{
+  text-decoration: none;
+}
+#blogPreview
+{
+  padding-left: 20px;
+  display: block;
+}
+#blogHeader > h4,
+#blogHeader > h6
+{
+  display: block;
+  margin-bottom: 0px;
+}
+#blogHeader > h6
+{
+  margin-top: 5px;
+  color: rgba(0,0,0,0.7);
+  padding-bottom: 5px;
+}
+#blogImgNp
+{
+  display: block;
+}
+#blogImg,
+#blogImgNp > p
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+#blogImg
+{
+  width: 20%;
+  border: 1px solid #045F85;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 75px;
+}
+#blogImgNp > p
+{
+  width: 80%;
+  padding:0 15px 0 30px;
+  font-size: 15px;
+}
+#blogImg > a > img
+{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:420px)
+{
+  #aboutMe > h3
+  {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  #aboutMe > p
+  {
+    padding: 10px 0px;
+    padding-left: 75px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+  #blogImgNp
+  {
+    width: 100%;
+    margin-left: -20px;
+  }
+  #blogImg,
+  #blogImgNp > p
+  {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  #blogImg
+  {
+    width: 100px;
+    border: 1px solid #045F85;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  #blogImgNp > p
+  {
+    width: 60%;
+    white-space: pre-wrap;
+    padding:0px 0px 0 10px;
+  }
+}

@@ -1,0 +1,83 @@
+<div id="container">
+  <div class="headerBackground"></div>
+  <div id="header">
+    <div id="headerLeft">
+      <a routerLink="/"><h2>Chris Mathew</h2></a>
+      <span>Student Developer</span>
+    </div>
+    <div id="headerRight">
+      <a href="assets/chris-mathew-resume.pdf" target="_blank">RESUME</a>
+    </div>
+  </div>
+  <div id="menuLines">
+    <hr id="leftLine">
+    <hr id="rotateLine">
+    <hr id="rightLine">
+  </div>
+
+  <div id="mainMenu" (clickOutside)="onClickedOutside($event)">
+    <input type="checkbox" id="nav" style="display: none;" (click)="toggleMenu()" (click)="toggleBlur()">
+    <label for="nav" class="material-icons">dehaze</label>
+
+    <div id="pages">
+      <a id="men1" (click)="setTitleTo($event)" (click)="subMenuSwitch('homeSubMenu')" (click)="slideMenuOut()" (click)="removeBlur()" routerLink="">Home</a>
+      <a id="men2" (click)="setTitleTo($event)" (click)="subMenuSwitch('experienceSubMenu')" (click)="slideMenuOut()" (click)="removeBlur()" routerLink="/experience">Experience</a>
+      <a id="men3" (click)="setTitleTo($event)" (click)="subMenuSwitch('contactSubMenu')" (click)="slideMenuOut()" (click)="removeBlur()" routerLink="/contact">Contact</a>
+    </div>
+  </div>
+  <div id="whiteBar">
+    <div id="square"></div>
+    <div id="trapezoid"></div>
+  </div>
+
+  <div id="subMenu" [ngSwitch]="subMenus" [@titleSwitch]>
+    <div id="homeSubMenu" *ngSwitchCase="'homeSubMenu'" [@titleSwitch]>
+      <a class="submenu" href= "#aboutMe" title="">
+        <p>About Me</p>
+      </a>
+      <a class="submenu" routerLink="/blog" (click)="toElement('pageTitle')">
+        <p>Blog</p>
+      </a>
+    </div>
+    <div id="experienceSubMenu" *ngSwitchCase="'experienceSubMenu'"[@titleSwitch]>
+      <a class="submenu" (click)="toElement('portfolio')">
+        <p>Portfolio</p>
+      </a>
+      <a class="submenu" (click)="toElement('workXp')">
+        <p>Work Experience</p>
+      </a>
+      <a class="submenu" (click)="toElement('education')">
+        <p>Education</p>
+      </a>
+    </div>
+    <div id="contactSubMenu" *ngSwitchCase="'contactSubMenu'">
+    </div>
+  </div>
+
+</div>
+<div id="BridgePicture">
+  <div id="pageTitle" ><h3 [@titleSwitch]>{{ pageTitle }}</h3></div>
+  <img src="assets/brooklingBridge.jpg" alt="Brookling Bridge">
+</div>
+
+<div id="container2">
+  <div [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <router-outlet (activate)="onActivate($event)" #outlet="outlet"></router-outlet>
+  </div>
+  <!-- <app-blog></app-blog> -->
+  <div id="footer-background"></div>
+  <div id="footer">
+    <h3>QUICK LINKS</h3>
+    <div id="quickLinks">
+      <a id="men1" (click)="setTitleTo($event)" (click)="subMenuSwitch('homeSubMenu')" (click)="onActivate($event)"routerLink="">Home</a>
+      <a id="men2" (click)="setTitleTo($event)" (click)="subMenuSwitch('experienceSubMenu')" routerLink="/experience">Experience</a>
+      <a id="men3" (click)="setTitleTo($event)" (click)="subMenuSwitch('contactSubMenu')" routerLink="/contact">Contact</a>
+      <a href="assets/chris-mathew-resume.pdf" target="_blank">Resume</a>
+      <a href="https://www.linkedin.com/in/chris-m-525266116/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/chrismathew3" target="_blank">GitHub</a>
+    </div>
+    <div id="signature">
+      <p>Developed by <a href="http://www.pavelaparcana.com" target="_blank">Pavel Aparcana</a></p>
+    </div>
+  </div>
+</div>

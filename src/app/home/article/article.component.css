@@ -1,0 +1,39 @@
+#articleContainer
+{
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+#imgNText
+{
+  width: 100%;
+  position: relative;
+  display: block;
+}
+#image
+{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+#image > img
+{
+  width: 100%;
+}
+#articleContainer > i
+{
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+#imgNText > p
+{
+  font-size: 16px;
+  padding: 10px 30px;
+  padding-top: 20px;
+  /* following line is what allows the JSON file to work with paragraph notations like quotes and line breaks */
+  white-space: pre-wrap;
+}

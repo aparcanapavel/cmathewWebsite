@@ -1,0 +1,19 @@
+<div id="blogContainer">
+  <div id="blogPreview" *ngFor="let blog of blogs | reverse">
+    <div id="blogHeader">
+      <a routerLink="/blog/{{blog.blogId}}"><h4>{{ blog.blogTitle }}</h4></a>
+      <h6>{{ blog.blogDate }}</h6>
+    </div>
+
+    <div id="blogImgNp">
+      <div id="blogImg">
+        <a routerLink="/blog/{{blog.blogId}}"><img src={{blog.blogImage}} alt=""></a>
+      </div>
+
+      <p style="white-space: pre-wrap;">{{ blog.blogSummary }}</p>
+    </div>
+    <hr id="blogDivider">
+  </div>
+
+
+</div>

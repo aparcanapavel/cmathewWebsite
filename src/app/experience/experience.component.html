@@ -1,0 +1,49 @@
+<div id="experienceContainer">
+  <div id="portfolio">
+    <h3>Portfolio</h3>
+    <div id="port" *ngFor="let portTitle of portTitles">
+      <h4>{{ portTitle.portfolioTitle }}</h4>
+      <div id="projectList" *ngFor="let project of portTitle.projects| reverse">
+        <a href="{{ project.projDocument }}" target="_blank"><h5>{{ project.projTitle }}</h5></a>
+        <p>{{ project.projSummary }}</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="horizontalLine">
+
+  <div id="workXp">
+    <h3>Work Experience</h3>
+    <div id="jobs" *ngFor="let work of workDetails | reverse">
+      <div id="dateLocation">
+        <h5>{{ work.workLength }}</h5>
+        <h5><i>{{ work.location }}</i></h5>
+      </div>
+      <h4>{{ work.position }}</h4>
+      <h5>{{ work.companyName }}</h5>
+
+      <div>
+        <div id="vLine"></div>
+        <ul id="jobDescription">
+          <li *ngFor="let desc of work.description">{{ desc.desc }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="horizontalLine">
+
+  <div id="education">
+    <p><i>Expected Graduation: Spring 2019</i></p>
+    <h3>Education</h3>
+    <div id="school">
+      <h4>Bachelor of Science</h4>
+      <p>Rutgers University</p>
+    </div>
+    <div id="studies">
+      <p>Major: <i>Computer Science</i></p>
+      <p>Minor: <i>Entrepreneurship</i></p>
+      <p>Minor: <i>Psychology</i></p>
+    </div>
+  </div>
+</div>
